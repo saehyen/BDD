@@ -152,7 +152,7 @@ export default {
     created(){
         // 사연 hooper용
         this.getdonation();
-        axios.get('http://localhost:9999/storylist')
+        axios.get('http://192.168.0.57:9999/storylist')
             .then(res =>{ 
                 this.lists = res.data;
                 for(var i =0; i<5; i++){
@@ -167,7 +167,7 @@ export default {
             .catch(error => 
             console.log(error));
         // 총 후원 관련
-        axios.get('http://localhost:9999/d_detaillist')
+        axios.get('http://192.168.0.57:9999/d_detaillist')
         .then(res =>{ 
             this.donation = res.data;
             for(var i =0; i<this.donation.length; i++){

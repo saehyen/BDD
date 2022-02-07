@@ -5,7 +5,7 @@ import axios from 'axios'
 import store from './store'
 import VueSession from 'vue-session'
 // import axios from 'axios'
-// axios.defult.baseURL = "https://localhost:9999"
+// axios.defult.baseURL = "https://192.168.0.57:9999"
 var sessionOptions ={
   persist: true
 }

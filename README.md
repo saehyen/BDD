@@ -1,11 +1,25 @@
 # 헌혈증서 기부 사이트
-## 버전 정보
-    - Java version : 11
-    - node version : 14.18.1
-    - npm  version : 6.14.15 
-    - vue  version : 3
-    
-## 기능설계
+
+## 시연 영상
+<img width="100%"  src="./README_IMG/시연영상.gif"/>
+
+## 기술 스택
+|기술명|버전|
+|------|---|
+|Vue|2|
+|npm|6.14.15|
+|node|14.18.1|
+|Spring Boot|2.6.1|
+|Java|11|
+
+## 프로젝트 설계
+    프로젝트 기간 : 2021-12-07 ~ 2022-12-23
+    멤버구성 :프론트엔드 1명 | 백엔드 2명
+
+|기능설계|화면설계|ERD설계|
+|------|---|---|
+|<img width=300px height=100px src="./README_IMG/기능설계.PNG"/>|<img width="300px" height=100px src="./README_IMG/화면설계.PNG"/>|<img width="300px" height=100px src="./README_IMG/ERD설계.PNG"/>|
+
     <기본>
     1. 회원가입
     2. 메인홈페이지에 사연띄우기
@@ -25,11 +39,3 @@
     1. 사연 등록
     2. 헌혈증 기부받기
     3. 후기 등록
-
-## 설치파일
-
-#### front
-
-- npm install router
-- npm install axisos
-- npm install hooper

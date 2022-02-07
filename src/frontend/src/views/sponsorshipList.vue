@@ -50,7 +50,7 @@ export default {
 		maxpage: 0,
 		pageNum:0,
 		ResultMap: [],
-		baseUrl : 'http://localhost:9999',
+		baseUrl : 'http://192.168.0.57:9999',
         dates:"",
         story_title: '',
         story_content: '',
@@ -81,7 +81,7 @@ export default {
     methods:
     {
         async getpagelist(){
-            await axios.get('http://localhost:9999/api/sponsorshiplist',{
+            await axios.get('http://192.168.0.57:9999/api/sponsorshiplist',{
                 params : {
                     page : this.nowpage,
                     size : 10
@@ -112,7 +112,7 @@ export default {
 		},
 
 		    getlist(){
-        axios.get('http://localhost:9999/storylist')
+        axios.get('http://192.168.0.57:9999/storylist')
             .then(res =>{ 
                 this.lists = res.data;
                 this.page = this.pageCount();

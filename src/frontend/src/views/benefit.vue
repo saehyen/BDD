@@ -117,7 +117,7 @@ export default {
   },
   methods:{
         get_user(){
-            axios.get('http://localhost:9999/userlist', {
+            axios.get('http://192.168.0.57:9999/userlist', {
                 params : {
                     id : this.id
                 }
@@ -137,7 +137,7 @@ export default {
             this.sel_product = event.target.value;
         },
         get_benefitlist(){
-        axios.get('http://localhost:9999/allbenefitlist',{
+        axios.get('http://192.168.0.57:9999/allbenefitlist',{
             params : {
                 id : this.id
             }
@@ -163,7 +163,7 @@ export default {
                 alert("상품을 선택하세요");
                 return 0;
             }
-            axios.post('http://localhost:9999/checkbenefit',this.lists[0])
+            axios.post('http://192.168.0.57:9999/checkbenefit',this.lists[0])
             .than(
                 alert("상품 획득")
             )

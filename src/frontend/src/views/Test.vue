@@ -41,7 +41,7 @@ export default {
     methods :{
         join(){
             const config={
-                    baseUrl:'http://localhost:9999'
+                    baseUrl:'http://192.168.0.57:9999'
             };
             // // function joinUser(User){
                 //     // }
@@ -58,7 +58,7 @@ export default {
             }
             // // this.joinUser(User);
             axios.post(`${config.baseUrl}/signtoo`,User)
-            // axios.get('http://localhost:9999/test')
+            // axios.get('http://192.168.0.57:9999/test')
             .then((res)=>{
                 console.log(res)
                 // console.log(message.data)

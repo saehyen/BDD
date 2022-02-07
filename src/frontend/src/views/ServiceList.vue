@@ -51,7 +51,7 @@ export default {
     methods:
     {
         async getlist(){
-            await axios.get('http://localhost:9999/api/boardlist',{
+            await axios.get('http://192.168.0.57:9999/api/boardlist',{
                 params : {
                     page : this.nowpage,
                     size : 10

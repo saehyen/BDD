@@ -66,7 +66,7 @@ export default {
             'registerId' : this.$session.get('UserId'),
             }
         const config={
-                    baseUrl:'http://localhost:9999'
+                    baseUrl:'http://192.168.0.57:9999'
             };
         
         axios.post(`${config.baseUrl}/page/service_board/action`,Params     

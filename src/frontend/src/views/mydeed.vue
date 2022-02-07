@@ -70,7 +70,7 @@ export default {
         },
         // axios
         detail_get(){
-            axios.get('http://localhost:9999/d_detail_get',{
+            axios.get('http://192.168.0.57:9999/d_detail_get',{
                 params : {
                     donorUid : this.donorUid
                 }
@@ -87,7 +87,7 @@ export default {
             console.log(error))
         },
         get_stroy(){
-        axios.get('http://localhost:9999/storylist')
+        axios.get('http://192.168.0.57:9999/storylist')
         .then(res =>{ 
             //console.log(res);
             this.storylists = res.data;
@@ -97,7 +97,7 @@ export default {
             console.log(error))
     }, 
         get_user(){
-            axios.get('http://localhost:9999/userlist', {
+            axios.get('http://192.168.0.57:9999/userlist', {
                 params : {
                     id : this.id
                 }

@@ -51,7 +51,7 @@ export default {
     methods :{
         join(){
             const config={
-                    baseUrl:'http://localhost:9999'
+                    baseUrl:'http://192.168.0.57:9999'
             };
             var User ={
                 'id' : this.id,
